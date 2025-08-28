@@ -1,3 +1,4 @@
+// noinspection JSUnusedGlobalSymbols
 export default {
 	fetch(request) {
 		const url = new URL(request.url);
