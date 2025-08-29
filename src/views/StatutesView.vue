@@ -15,58 +15,50 @@
       Rebild Kommune
     </p>
 
+    <p>
+      <b>§3 Foreningens formål</b>
+      <br>
+      At samle interesserede indenfor esporten, afholde åbne spilleaftener, faste træningstider, turneringer og arrangementer henvendt til denne gruppe.
+    </p>
 
-    §3 Foreningens formål
+    <p>
+      <b>§4 Medlemskab</b>
+      <br>
+      <b>§4.1</b> Alle, der går ind for foreningens formål, kan blive medlem. Man er medlem af foreningen, når medlemskabet er registreret.
+      <br>
+      <b>§4.2</b> Bestyrelsen kan ekskludere et medlem, der arbejder imod foreningen. Det ekskluderede medlem kan skriftligt forlange, at eksklusionen bliver prøvet på førstkommende generalforsamling.
+    </p>
 
-    §3 Foreningens formål er at samle interesserede indenfor esporten, afholde åbne spilleaftener, faste træningstider,
-    turneringer og arrangementer henvendt til denne gruppe.
-
-    §4 Medlemskab
-
-    4.1 Alle, der går ind for foreningens formål, kan blive medlem. Man er medlem af foreningen, når medlemskabet er
-    registreret.
-    4.2 Bestyrelsen kan ekskludere et medlem, der arbejder imod foreningen. Det ekskluderede medlem kan skriftligt
-    forlange, at eksklusionen bliver prøvet på førstkommende generalforsamling.
-
-    §5 Generalforsamlingen
-
-    5.1 Generalforsamlingen er foreningens øverste myndighed.
-
-    5.2 Bestyrelsen indkalder med minimum 1 måneds varsel alle medlemmer til den årlige generalforsamling.
-    Generalforsamling afholdes inden udgangen af marts.
-
-    5.3 Forslag til dagsordenen sendes til formanden senest 14 dage før og medlemmerne skal have kendskab til den
-    endelige dagsorden med bilag 8 dage før.
-
-    5.4 Stemmeret Alle medlemmer, der er fyldt 18 år har stemmeret. Forældre til børn under 18 år har en stemme pr. barn
-    – dog har intet medlem mere end én stemme.
-
-    5.5 Alle, der er fyldt 15 år, kan vælges til bestyrelsen – dog skal formand, næstformand og kasserer være fyldt 18
-    år. 5.6 Alle afgørelser vedtages med simpelt flertal – dog skal vedtægtsændringer besluttes med 2/3 flertal. Alle
-    afstemninger afgøres ved håndsoprækning. Dog skal der være skriftlig afstemning, hvis dirigenten bestemmer det eller
-    3 medlemmer på generalforsamlingen ønsker det samt ved alle kampvalg. 5.7 Generalforsamlingens dagsorden
-
-    • Valg af dirigent og stemmetællere
-
-    • Bestyrelsens beretning
-
-    • Fremlæggelse af regnskab til godkendelse
-
-    • Indkomne forslag
-
-    • Forslag til handlingsplan og budget
-
-    • Valg af bestyrelse og suppleant
-
-    • Valg af 2 revisorer samt en revisorsuppleant
-
-    • Evt.
-
-    5.8 Generalforsamlingen kan afholdes digitalt
-
-    Generalforsamlingen afholdes digitalt hvis enten bestyrelsen beslutter dette eller 20% af medlemmerne ønsker dette.
-    Konkret skal det digitale format meddeles ved indkaldelsen til generalforsamlingen. Herunder link samt hvordan valg
-    og afstemninger foregår.
+    <p>
+      <b>§5 Generalforsamlingen</b>
+      <br>
+      <b>§5.1</b> Generalforsamlingen er foreningens øverste myndighed.
+      <br>
+      <b>§5.2</b> Bestyrelsen indkalder med minimum 1 måneds varsel alle medlemmer til den årlige generalforsamling. Generalforsamling afholdes inden udgangen af marts.
+      <br>
+      <b>§5.3</b> Forslag til dagsordenen sendes til formanden senest 14 dage før og medlemmerne skal have kendskab til den endelige dagsorden med bilag 8 dage før.
+      <br>
+      <b>§5.4</b> Stemmeret Alle medlemmer, der er fyldt 18 år har stemmeret. Forældre til børn under 18 år har en stemme pr. barn – dog har intet medlem mere end én stemme.
+      <br>
+      <b>§5.5</b> Alle, der er fyldt 15 år, kan vælges til bestyrelsen – dog skal formand, næstformand og kasserer være fyldt 18 år.
+      <br>
+      <b>§5.6</b> Alle afgørelser vedtages med simpelt flertal – dog skal vedtægtsændringer besluttes med 2/3 flertal. Alle afstemninger afgøres ved håndsoprækning. Dog skal der være skriftlig afstemning, hvis dirigenten bestemmer det eller 3 medlemmer på generalforsamlingen ønsker det samt ved alle kampvalg.
+      <br>
+      <b>§5.7</b> Generalforsamlingens dagsorden
+      • Valg af dirigent og stemmetællere
+      • Bestyrelsens beretning
+      • Fremlæggelse af regnskab til godkendelse
+      • Indkomne forslag
+      • Forslag til handlingsplan og budget
+      • Valg af bestyrelse og suppleant
+      • Valg af 2 revisorer samt en revisorsuppleant
+      • Evt.
+      <br>
+      <b>§5.8</b> Generalforsamlingen kan afholdes digitalt
+      Generalforsamlingen afholdes digitalt hvis enten bestyrelsen beslutter dette eller 20% af medlemmerne ønsker dette.
+      Konkret skal det digitale format meddeles ved indkaldelsen til generalforsamlingen. Herunder link samt hvordan valg
+      og afstemninger foregår.
+    </p>
 
     §6 Ekstraordinær generalforsamling
 
