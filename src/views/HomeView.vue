@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <img src="@/assets/home_banner.jpg" alt="home banner" class="uk-width-max-content uk-align-center">
+  <img src="@/assets/home_banner.jpg" alt="home banner" class="uk-width-max-content uk-align-center uk-margin-remove-top uk-margin-small-bottom">
   <div class="uk-container">
 
     <p>Velkommen til Støvring eSport</p>

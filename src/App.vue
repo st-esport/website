@@ -3,12 +3,12 @@ import {RouterLink, RouterView} from 'vue-router'
 </script>
 
 <template>
-  <header class="uk-margin-small-bottom">
+  <header>
     <nav class="uk-navbar-container uk-navbar-transparent">
       <div class="uk-container">
         <div uk-navbar>
           <div class="uk-navbar-left">
-            <ul class="uk-navbar-nav">
+            <ul class="uk-navbar-nav uk-flex uk-flex-middle">
               <RouterLink to="/">
                 <img alt="Logo" src="@/assets/logo.png" class="uk-padding-small" style="height: 5em;"/>
               </RouterLink>
