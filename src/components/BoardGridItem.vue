@@ -1,9 +1,15 @@
-<script setup>
-defineProps(['title', 'name', 'photo', 'phone', 'email'])
+<script setup lang="ts">
+defineProps({
+  title: String,
+  name: String,
+  photo: String,
+  phone: String,
+  email: String
+})
 </script>
 
 <template>
-  <div class="uk-card uk-card-default uk-card-body">
+  <div>
     <img class="uk-border-rounded uk-width-medium" :src="photo" :alt="name"/><br>
     <div class="uk-text-left">
       {{ title }}<br>
