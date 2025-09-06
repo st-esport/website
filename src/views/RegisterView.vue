@@ -8,7 +8,7 @@
 
   <p>Når du er logget ind skal finde du "Tilføj hold" knappen og søge Støvring Esport frem.</p>
 
-  <p>Dernæst finder trykker du på "Anmod" ud for det ønskede hold.</p>
+  <p>Dernæst trykker du på "Anmod" ud for det ønskede hold.</p>
 
   <p>Vores holdansvarlige vil modtage en email, og vil inden for kort tid acceptere din anmodning.</p>
 </template>
