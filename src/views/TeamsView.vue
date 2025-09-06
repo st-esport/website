@@ -1,13 +1,9 @@
 <script setup lang="ts">
+import TeamItem from "@/components/TeamItem.vue";
 </script>
 
 <template>
-  <div class="uk-container">
-    <div class="uk-grid-small uk-text-center uk-flex-center" uk-grid>
-      <div class="uk-card uk-card-default uk-card-body">Fornite<br>Mandag<br>17:30 - 19:30</div>
-      <div class="uk-card uk-card-default uk-card-body">Fornite<br>Tirsdag<br>17:30 - 19:30</div>
-      <div class="uk-card uk-card-default uk-card-body">Counter Strike<br>Onsdag<br>17:30 - 19:30</div>
-      <div class="uk-card uk-card-default uk-card-body">Minecraft<br>Torsdag<br>17:30 - 19:30</div>
-    </div>
-  </div>
+  <TeamItem label="Fornite holdene er mandag og tirsdag. Mødetid er 17:30 og vi slutter 19:30" photo="/fortnite_banner.jpg"/>
+  <TeamItem label="CSGo holdet er onsdag. Mødetid er 17:30 og vi slutter 19:30" photo="/csgo_banner.jpg"/>
+  <TeamItem label="Minecraft holdet er torsdag. Mødetid er 17:30 og vi slutter 19:30" photo="/minecraft_banner.jpg"/>
 </template>

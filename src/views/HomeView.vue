@@ -2,15 +2,13 @@
 </script>
 
 <template>
-  <img src="@/assets/home_banner.jpg" alt="home banner" class="uk-width-max-content uk-align-center uk-margin-remove-top uk-margin-small-bottom">
-  <div class="uk-container">
+  <img src="/home_banner.jpg" alt="home banner" class="uk-width-max-content uk-align-center uk-margin-remove-top uk-margin-small-bottom">
 
-    <p>Velkommen til Støvring eSport</p>
+  <b>Velkommen til Støvring eSport</b>
 
-    <p>Besøg <RouterLink to="/hold">/hold</RouterLink>, hvis du ønsker at tilmelde dig.</p>
+  <p>Du er altid velkommen til at kigge ned for at se lokalerne eller få hjælp til teknikken  - Bare kig ned!</p>
 
-    <p>Man kan til enhver træning komme ned og se lokalerne - Bare kig ned!</p>
+  <p>Besøg <RouterLink to="/tilmeld">/tilmeld</RouterLink>, hvis du ønsker at tilmelde dig. Det koster 500kr. pr halv sæson</p>
 
-    <p>Har du spørgsmål eller ønsker at hjælpe til i foreningen, så kontakt os endelig på <a href="https://www.facebook.com/stoevringesport">https://www.facebook.com/stoevringesport</a></p>
-  </div>
+  <p>Har du spørgsmål eller ønsker at hjælpe til i foreningen, så kontakt os endelig på <a href="https://www.facebook.com/stoevringesport">https://www.facebook.com/stoevringesport</a></p>
 </template>

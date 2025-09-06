@@ -14,8 +14,8 @@ defineProps({
     <div class="uk-text-left">
       {{ title }}<br>
       <b>{{ name }}</b><br>
-      <a :href="'tel:' + phone">{{ phone }}</a><br>
       <a :href="'mailto:' + email">{{ email }}</a><br>
+      <a :href="'tel:' + phone">{{ phone }}</a><br>
     </div>
   </div>
 </template>
