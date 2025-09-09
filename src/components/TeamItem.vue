@@ -6,7 +6,6 @@ defineProps({
 </script>
 
 <template>
-  <div class="uk-height-medium uk-flex uk-flex-center uk-flex-bottom uk-background-cover uk-light" :data-src="photo" uk-img>
-    <p class="uk-badge">{{ label }}</p>
-  </div>
+  <img :src="photo" alt="home banner" class="uk-width-max-content uk-align-center uk-margin-remove">
+  <p class="uk-margin-remove-top">{{ label }}</p>
 </template>

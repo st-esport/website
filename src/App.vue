@@ -17,7 +17,7 @@ import {RouterLink, RouterView} from 'vue-router'
               <div class="uk-dropdown">
                 <ul class="uk-nav uk-dropdown-nav">
                   <li><RouterLink to="/bestyrelsen">Bestyrelsen</RouterLink></li>
-<!--                  <li><RouterLink to="/vedtaegter">Vedtægter</RouterLink></li>-->
+                  <li><RouterLink to="/vedtaegter">Vedtægter</RouterLink></li>
 <!--                  <li><RouterLink to="/ordensregler">Ordensregler</RouterLink></li>-->
                 </ul>
               </div>
@@ -28,8 +28,7 @@ import {RouterLink, RouterView} from 'vue-router'
     </nav>
   </header>
 
-  <div class="uk-container">
+  <div class="uk-container uk-padding-small">
     <RouterView/>
   </div>
-
 </template>
