@@ -5,6 +5,7 @@ import BoardView from "@/views/BoardView.vue";
 import StatutesView from "@/views/StatutesView.vue";
 import RegisterView from "@/views/RegisterView.vue";
 import RulesOfOrderView from "@/views/RulesOfOrderView.vue";
+import NotFoundView from "@/views/NotFoundView.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,11 @@ const router = createRouter({
             path: '/ordensregler',
             name: 'ordensregler',
             component: RulesOfOrderView,
+        },
+        {
+            path: '/:pathMatch(.*)*',
+            name: '404',
+            component: NotFoundView,
         },
     ],
 })
