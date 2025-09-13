@@ -144,7 +144,12 @@
   </p>
 
   <p>
-  <i>Vedtaget på den ordinære Generalforsamling den 10. november 2020<br>
-    Torsten Topbjerg, Emil Krog Kruse, Anders Damgren, Rasmus Sahl Haferbier, Nikolaj Bøgh, Jeppe Balle Aaen, Mads Kristensen Støvring den 17.11.2020</i>
+    <i>
+      Vedtaget på den ordinære Generalforsamling den 10. november 2020
+      <br>
+      Torsten Topbjerg, Emil Krog Kruse, Anders Damgren, Rasmus Sahl Haferbier, Nikolaj Bøgh, Jeppe Balle Aaen, Mads Kristensen
+      <br>
+      Støvring den 17.11.2020
+    </i>
   </p>
 </template>
