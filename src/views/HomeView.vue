@@ -8,7 +8,9 @@
 
   <p>Du er altid velkommen til at kigge ned for at se lokalerne eller få hjælp til teknikken.</p>
 
-  <p>Tryk <RouterLink to="/tilmeld">tilmeld</RouterLink>, hvis du ønsker at tilmelde dig. Det koster 500 kr. hvert halve år.</p>
+  <p>Vi tilbyder tre forskellige hold. <RouterLink to="fornite">Fornite</RouterLink>, <RouterLink to="counterstrike">Counter-Strike</RouterLink> og <RouterLink to="minecraft">Minecraft</RouterLink></p>
+
+  <p>Tryk <RouterLink to="tilmeld">tilmeld</RouterLink>, hvis du ønsker at tilmelde dig. Det koster 500 kr. hvert halve år.</p>
 
   <p>Har du spørgsmål eller ønsker at hjælpe til i foreningen, så kontakt os endelig på <a href="https://www.facebook.com/stoevringesport">https://www.facebook.com/stoevringesport</a></p>
 </template>
