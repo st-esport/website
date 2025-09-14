@@ -5,7 +5,7 @@ import {RouterLink, RouterView} from 'vue-router'
 <template>
   <header>
     <div class="uk-container">
-    <nav uk-dropnav animation="uk-none-animation">
+    <nav uk-dropnav close-on-scroll="true" animation="uk-none-animation">
       <ul class="uk-subnav">
         <li><RouterLink class="uk-logo" to="/"><img alt="Logo" src="@/assets/logo.png" style="height: 5em;"/></RouterLink></li>
         <li><RouterLink to="tilmeld">Tilmeld</RouterLink></li>
