@@ -1,16 +1,12 @@
 <script setup lang="ts">
+import SiteContainer from "@/components/SiteContainer.vue";
 </script>
 
 <template>
-  <img src="/home_banner.jpg" alt="home banner" class="uk-width-max-content uk-align-center uk-margin-remove-top uk-margin-small-bottom">
-
-  <h1>Velkommen til Støvring eSport</h1>
-
-  <p>Du er altid velkommen til at kigge ned for at se lokalerne eller få hjælp til teknikken.</p>
-
-  <p>Vi tilbyder tre forskellige hold. <RouterLink to="fornite">Fornite</RouterLink>, <RouterLink to="counterstrike">Counter-Strike</RouterLink> og <RouterLink to="minecraft">Minecraft</RouterLink></p>
-
-  <p>Tryk <RouterLink to="tilmeld">tilmeld</RouterLink>, hvis du ønsker at tilmelde dig. Det koster 500 kr. hvert halve år.</p>
-
-  <p>Har du spørgsmål eller ønsker at hjælpe til i foreningen, så kontakt os endelig på <a href="https://www.facebook.com/stoevringesport">https://www.facebook.com/stoevringesport</a></p>
+  <SiteContainer title="Velkommen til Støvring eSport" photo="/home_banner.jpg">
+    <p>Du er altid velkommen til at kigge ned for at se lokalerne eller få hjælp til teknikken.</p>
+    <p>Vi tilbyder tre forskellige hold. <RouterLink to="fortnite">Fortnite</RouterLink>, <RouterLink to="counterstrike">Counter-Strike</RouterLink> og <RouterLink to="minecraft">Minecraft</RouterLink></p>
+    <p>Tryk <RouterLink to="tilmeld">tilmeld</RouterLink>, hvis du ønsker at tilmelde dig. Det koster 500 kr. hvert halve år.</p>
+    <p>Har du spørgsmål eller ønsker at hjælpe til i foreningen, så kontakt os endelig på <a href="https://www.facebook.com/stoevringesport">https://www.facebook.com/stoevringesport</a></p>
+  </SiteContainer>
 </template>

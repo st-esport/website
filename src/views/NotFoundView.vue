@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import SiteContainer from "@/components/SiteContainer.vue";
 </script>
 
 <template>
-  Siden du besøgte findes ikke.
+  <SiteContainer>
+    <p>Siden du besøgte findes ikke.</p>
+  </SiteContainer>
 </template>
