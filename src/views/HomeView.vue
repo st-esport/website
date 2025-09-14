@@ -3,7 +3,7 @@ import SiteContainer from "@/components/SiteContainer.vue";
 </script>
 
 <template>
-  <SiteContainer title="Velkommen til Støvring eSport" photo="/home_banner.jpg">
+  <SiteContainer title="Velkommen!" photo="/home_banner.jpg">
     <p>Du er altid velkommen til at kigge ned for at se lokalerne eller få hjælp til teknikken.</p>
     <p>Vi tilbyder tre forskellige hold. <RouterLink to="fortnite">Fortnite</RouterLink>, <RouterLink to="counterstrike">Counter-Strike</RouterLink> og <RouterLink to="minecraft">Minecraft</RouterLink></p>
     <p>Tryk <RouterLink to="tilmeld">tilmeld</RouterLink>, hvis du ønsker at tilmelde dig. Det koster 500 kr. hvert halve år.</p>
