@@ -5,7 +5,7 @@ import StatutesView from "@/views/StatutesView.vue";
 import RegisterView from "@/views/RegisterView.vue";
 import RulesOfOrderView from "@/views/RulesOfOrderView.vue";
 import NotFoundView from "@/views/NotFoundView.vue";
-import ForniteView from "@/views/ForniteView.vue";
+import FortniteView from "@/views/FortniteView.vue";
 import CounterStrikeView from "@/views/CounterStrikeView.vue";
 import MinecraftView from "@/views/MinecraftView.vue";
 
@@ -23,9 +23,9 @@ const router = createRouter({
             component: RegisterView
         },
         {
-            path: '/fornite',
-            name: 'fornite',
-            component: ForniteView,
+            path: '/fortnite',
+            name: 'fortnite',
+            component: FortniteView,
         },
         {
             path: '/counterstrike',

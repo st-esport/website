@@ -5,7 +5,7 @@ import {RouterLink, RouterView} from 'vue-router'
 <template>
   <header>
     <div class="uk-container">
-    <nav uk-dropnav animation="uk-none-animation">
+    <nav uk-dropnav close-on-scroll="true" animation="uk-none-animation">
       <ul class="uk-subnav">
         <li><RouterLink class="uk-logo" to="/"><img alt="Logo" src="@/assets/logo.png" style="height: 5em;"/></RouterLink></li>
         <li><RouterLink to="tilmeld">Tilmeld</RouterLink></li>
@@ -13,7 +13,7 @@ import {RouterLink, RouterView} from 'vue-router'
           <a href="#">Hold <span uk-drop-parent-icon></span></a>
           <div class="uk-dropdown">
             <ul class="uk-nav uk-dropdown-nav">
-              <li><RouterLink to="fornite">Fornite</RouterLink></li>
+              <li><RouterLink to="fortnite">Fortnite</RouterLink></li>
               <li><RouterLink to="counterstrike">Counter-Strike</RouterLink></li>
               <li><RouterLink to="minecraft">Minecraft</RouterLink></li>
             </ul>
@@ -34,7 +34,5 @@ import {RouterLink, RouterView} from 'vue-router'
     </div>
   </header>
 
-  <div class="uk-container uk-padding-small">
-    <RouterView/>
-  </div>
+  <RouterView/>
 </template>
