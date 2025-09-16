@@ -23,6 +23,7 @@ import {RouterLink, RouterView} from 'vue-router'
           <a href="#">Andet <span uk-drop-parent-icon></span></a>
           <div class="uk-dropdown">
             <ul class="uk-nav uk-dropdown-nav">
+              <li><RouterLink to="calendar">Kalender</RouterLink></li>
               <li><RouterLink to="bestyrelsen">Bestyrelsen</RouterLink></li>
               <li><RouterLink to="vedtaegter">Vedtægter</RouterLink></li>
               <!--<li><RouterLink to="/ordensregler">Ordensregler</RouterLink></li>-->

@@ -8,6 +8,7 @@ import NotFoundView from "@/views/NotFoundView.vue";
 import FortniteView from "@/views/FortniteView.vue";
 import CounterStrikeView from "@/views/CounterStrikeView.vue";
 import MinecraftView from "@/views/MinecraftView.vue";
+import CalendarView from "@/views/CalendarView.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -36,6 +37,11 @@ const router = createRouter({
             path: '/minecraft',
             name: 'minecraft',
             component: MinecraftView,
+        },
+        {
+            path: '/calendar',
+            name: 'calendar',
+            component: CalendarView,
         },
         {
             path: '/bestyrelsen',
