@@ -6,15 +6,15 @@
     <div class="uk-container">
       <nav uk-dropnav close-on-scroll="true" animation="uk-none-animation">
         <ul class="uk-subnav">
-          <li><RouterLink class="uk-logo" to="/"><img alt="Logo" src="/logo.png" style="height: 5em;"/></RouterLink></li>
-          <li><RouterLink to="tilmeld">Tilmeld</RouterLink></li>
+          <li><NuxtLink class="uk-logo" to="/"><img alt="Logo" src="/logo.png" style="height: 5em;"/></NuxtLink></li>
+          <li><NuxtLink to="tilmeld">Tilmeld</NuxtLink></li>
           <li>
             <a href="#">Hold <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
               <ul class="uk-nav uk-dropdown-nav">
-                <li><RouterLink to="fortnite">Fortnite</RouterLink></li>
-                <li><RouterLink to="counterstrike">Counter-Strike</RouterLink></li>
-                <li><RouterLink to="minecraft">Minecraft</RouterLink></li>
+                <li><NuxtLink to="fortnite">Fortnite</NuxtLink></li>
+                <li><NuxtLink to="counterstrike">Counter-Strike</NuxtLink></li>
+                <li><NuxtLink to="minecraft">Minecraft</NuxtLink></li>
               </ul>
             </div>
           </li>
@@ -22,9 +22,9 @@
             <a href="#">Andet <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
               <ul class="uk-nav uk-dropdown-nav">
-                <li><RouterLink to="bestyrelsen">Bestyrelsen</RouterLink></li>
-                <li><RouterLink to="vedtaegter">Vedtægter</RouterLink></li>
-                <!--<li><RouterLink to="/ordensregler">Ordensregler</RouterLink></li>-->
+                <li><NuxtLink to="bestyrelsen">Bestyrelsen</NuxtLink></li>
+                <li><NuxtLink to="vedtaegter">Vedtægter</NuxtLink></li>
+                <!--<li><NuxtLink to="/ordensregler">Ordensregler</NuxtLink></li>-->
               </ul>
             </div>
           </li>
