@@ -9,4 +9,4 @@ jobs:
       - name: Install modules
         run: npm install
       - name: Run ESLint
-        run: eslint . --no-fix --warnings=0
+        run: npx eslint . --no-fix --warnings=0
