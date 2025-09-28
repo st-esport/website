@@ -1,16 +1,16 @@
 <script setup lang="ts">
 defineProps({
-  title: String,
-  name: String,
-  photo: String,
-  phone: String,
-  email: String
+  title: {type: String, required: true},
+  name: {type: String, required: true},
+  photo: {type: String, required: true},
+  phone: {type: String, required: false, default: ''},
+  email: {type: String, required: false, default: ''}
 })
 </script>
 
 <template>
   <div>
-    <img class="uk-border-rounded uk-width-medium" :src="photo" :alt="name"/><br>
+    <img class="uk-border-rounded uk-width-medium" :src="photo" :alt="name"><br>
     <div class="uk-text-left">
       {{ title }}<br>
       <b>{{ name }}</b><br>

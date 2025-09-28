@@ -2,15 +2,15 @@
 </script>
 
 <template>
-  <header>
+  <div>
     <div class="uk-container">
       <nav uk-dropnav close-on-scroll="true" animation="uk-none-animation">
         <ul class="uk-subnav">
-          <li><NuxtLink class="uk-logo" to="/"><img alt="Logo" src="/logo.png" style="height: 5em;"/></NuxtLink></li>
+          <li><NuxtLink class="uk-logo" to="/"><img alt="Logo" src="/logo.png" style="height: 5em;"></NuxtLink></li>
           <li><NuxtLink to="tilmeld">Tilmeld</NuxtLink></li>
           <li>
-            <a href="#">Hold <span uk-drop-parent-icon></span></a>
-            <div class="uk-dropdown">
+            <a href="#">Hold <span uk-drop-parent-icon/></a>
+            <div class="uk-dropdown uk-drop">
               <ul class="uk-nav uk-dropdown-nav">
                 <li><NuxtLink to="fortnite">Fortnite</NuxtLink></li>
                 <li><NuxtLink to="counterstrike">Counter-Strike</NuxtLink></li>
@@ -19,8 +19,8 @@
             </div>
           </li>
           <li>
-            <a href="#">Andet <span uk-drop-parent-icon></span></a>
-            <div class="uk-dropdown">
+            <a href="#">Andet <span uk-drop-parent-icon/></a>
+            <div class="uk-dropdown uk-drop">
               <ul class="uk-nav uk-dropdown-nav">
                 <li><NuxtLink to="bestyrelsen">Bestyrelsen</NuxtLink></li>
                 <li><NuxtLink to="vedtaegter">Vedtægter</NuxtLink></li>
@@ -31,9 +31,9 @@
         </ul>
       </nav>
     </div>
-  </header>
 
-  <slot/>
+    <slot/>
+  </div>
 </template>
 
 <style>

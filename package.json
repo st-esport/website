@@ -12,15 +12,18 @@
 		"cf-typegen": "wrangler types"
 	},
 	"dependencies": {
+		"@fedorae/nuxt-uikit": "^3.1.14",
 		"nuxt": "^4.1.2",
-		"uikit": "^3.23.13",
-		"vue": "^3.5.21",
+		"vue": "^3.5.22",
 		"vue-router": "^4.5.1"
 	},
 	"devDependencies": {
+		"@nuxt/eslint": "^1.9.0",
 		"@types/uikit": "^3.23.0",
+		"eslint": "^9.36.0",
 		"nitro-cloudflare-dev": "^0.2.2",
 		"nitropack": "^2.12.6",
-		"wrangler": "^4.40.1"
+		"typescript": "^5.9.2",
+		"wrangler": "^4.40.2"
 	}
 }
