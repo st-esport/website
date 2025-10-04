@@ -4,13 +4,29 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["nitro-cloudflare-dev", "@fedorae/nuxt-uikit", '@nuxt/eslint', '@nuxtjs/seo'],
 
+  seo: {
+    meta: {
+      applicationName: 'Støvring eSport',
+      description: 'Fremmer børns sociale kundskaber og it færdigheder igennem gaming.',
+      keywords: 'støvring, esport, gaming, fortnite, minecraft, csgo',
+    }
+  },
+
+
+  sitemap: {
+    excludeAppSources: true,
+    urls: () => [
+      "/",
+      "/fortnite",
+      "/minecraft",
+      "/counter-strike",
+      "/tilmeld"
+    ]
+  },
+
   app: {
     head: {
       title: 'Støvring eSport',
-      meta: [
-        { name: 'description', content: 'Fremmer børns sociale kundskaber og it færdigheder igennem gaming.' },
-        { name: 'keywords', content: 'støvring, esport, gaming, fortnite, minecraft, csgo' },
-      ],
       htmlAttrs: {
         lang: 'da',
       },
