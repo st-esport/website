@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       "/",
       "/fortnite",
       "/minecraft",
-      "/counter-strike",
+      "/counterstrike",
       "/tilmeld"
     ]
   },
