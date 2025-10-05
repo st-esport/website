@@ -1,52 +1,56 @@
-export const routes = [
-    {
-        path: '/',
-        name: 'home',
-        component: () => import('~/pages/Home.vue'),
-        sitemap: true
-    },
-    {
-        name: 'tilmeld',
-        path: '/tilmeld',
-        component: () => import('~/pages/Register.vue'),
-        sitemap: true
-    },
-    {
-        path: '/fortnite',
-        name: 'fortnite',
-        component: () => import('~/pages/Fortnite.vue'),
-        sitemap: true
-    },
-    {
-        path: '/counterstrike',
-        name: 'counterstrike',
-        component: () => import('~/pages/CounterStrike.vue'),
-        sitemap: true
-    },
-    {
-        path: '/minecraft',
-        name: 'minecraft',
-        component: () => import('~/pages/Minecraft.vue'),
-        sitemap: true
-    },
-    {
-        path: '/bestyrelsen',
-        name: 'bestyrelsen',
-        component: () => import('~/pages/Board.vue'),
-        sitemap: false
-    },
-    {
-        path: '/vedtaegter',
-        name: 'vedtaegter',
-        component: () => import('~/pages/Statutes.vue'),
-        sitemap: false
-    },
-    {
-        path: '/ordensregler',
-        name: 'ordensregler',
-        component: () => import('~/pages/RulesOfOrder.vue'),
-        sitemap: false
-    },
-]
+import type { RouterConfig } from '@nuxt/schema'
+import RulesOfOrder from "~/pages/RulesOfOrder.vue";
+import Statutes from "~/pages/Statutes.vue";
+import Board from "~/pages/Board.vue";
+import Minecraft from "~/pages/Minecraft.vue";
+import CounterStrike from "~/pages/CounterStrike.vue";
+import Fortnite from "~/pages/Fortnite.vue";
+import Register from "~/pages/Register.vue";
+import Home from "~/pages/Home.vue";
 
-export default { routes: () => routes }
+export default {
+    routes: _routes => {
+        return [
+            {
+                path: '/',
+                name: 'home',
+                component: Home,
+            },
+            {
+                component: Register,
+                name: 'tilmeld',
+                path: '/tilmeld',
+            },
+            {
+                path: '/fortnite',
+                name: 'fortnite',
+                component: Fortnite,
+            },
+            {
+                path: '/counterstrike',
+                name: 'counterstrike',
+                component: CounterStrike,
+            },
+            {
+                path: '/minecraft',
+                name: 'minecraft',
+                component: Minecraft,
+            },
+            {
+                path: '/bestyrelsen',
+                name: 'bestyrelsen',
+                component: Board,
+            },
+            {
+                path: '/vedtaegter',
+                name: 'vedtaegter',
+                component: Statutes,
+            },
+            {
+                path: '/ordensregler',
+                name: 'ordensregler',
+                component: RulesOfOrder,
+            },
+        ];
+    },
+} satisfies RouterConfig
