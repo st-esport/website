@@ -17,6 +17,82 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       ],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "SportsOrganization",
+                "name": "Støvring eSport",
+                "url": "https://www.støvring-esport.dk/",
+                "logo": "https://www.xn--stvring-esport-rqb.dk/logo.png",
+                "description": "Fremmer børns sociale kundskaber og it færdigheder igennem gaming.",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Grangårdscentret 27",
+                  "addressLocality": "Støvring",
+                  "postalCode": "9530",
+                  "addressCountry": "DK"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "contactType": "general inquiries",
+                  "email": "adm@støvring-esport.dk",
+                  "areaServed": "DK",
+                  "availableLanguage": "Danish"
+                },
+                "sameAs": [
+                  "https://www.facebook.com/Stovringesport"
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "url": "https://www.støvring-esport.dk/",
+                "mainEntity": {
+                  "@type": "ItemList",
+                  "name": "Main Pages",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@id": "https://www.støvring-esport.dk/tilmeld/",
+                        "name": "Tilmeld"
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": {
+                        "@id": "https://www.støvring-esport.dk/fortnite/",
+                        "name": "Fortnite"
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "item": {
+                        "@id": "https://www.støvring-esport.dk/minecraft/",
+                        "name": "Minecraft"
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 4,
+                      "item": {
+                        "@id": "https://www.støvring-esport.dk/counter-strike/",
+                        "name": "Counter-Strike"
+                      }
+                    },
+                  ]
+                }
+              }
+            ]
+          })
+        }
+      ],
     },
   },
 
