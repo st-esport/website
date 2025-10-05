@@ -13,6 +13,7 @@
 	},
 	"dependencies": {
 		"@fedorae/nuxt-uikit": "^3.1.14",
+		"@nuxtjs/seo": "^3.2.2",
 		"nuxt": "^4.1.2",
 		"vue": "^3.5.22",
 		"vue-router": "^4.5.1"
