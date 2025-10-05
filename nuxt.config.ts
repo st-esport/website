@@ -27,7 +27,7 @@ export default defineNuxtConfig({
                 "@type": "SportsOrganization",
                 "name": "Støvring eSport",
                 "url": "https://www.støvring-esport.dk/",
-                "logo": "https://www.xn--stvring-esport-rqb.dk/logo.png",
+                "logo": "https://www.støvring-esport.dk/logo.png",
                 "description": "Fremmer børns sociale kundskaber og it færdigheder igennem gaming.",
                 "address": {
                   "@type": "PostalAddress",
@@ -44,7 +44,7 @@ export default defineNuxtConfig({
                   "availableLanguage": "Danish"
                 },
                 "sameAs": [
-                  "https://www.facebook.com/Stovringesport"
+                  "https://www.facebook.com/stoevringesport"
                 ]
               },
               {
