@@ -39,7 +39,7 @@ export default defineNuxtConfig({
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "contactType": "general inquiries",
-                  "email": "adm@støvring-esport.dk",
+                  "email": "adm@stoevring-esport.dk",
                   "areaServed": "DK",
                   "availableLanguage": "Danish"
                 },
