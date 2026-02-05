@@ -23,6 +23,7 @@
 		"eslint": "^9.39.2",
 		"nitro-cloudflare-dev": "^0.2.2",
 		"nitropack": "^2.13.1",
+		"sass": "^1.97.3",
 		"typescript": "^5.9.3",
 		"wrangler": "^4.62.0"
 	},
