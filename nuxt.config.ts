@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ["nitro-cloudflare-dev", "@fedorae/nuxt-uikit", '@nuxt/eslint'],
+  modules: ["nitro-cloudflare-dev", '@nuxt/eslint'],
 
-  css: ['~/assets/css/global.css'],
+  css: ['~/assets/scss/theme.scss'],
 
   app: {
     head: {
