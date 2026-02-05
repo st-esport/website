@@ -314,7 +314,11 @@ div.uk-dropdown,
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
+  color: #ffffff !important;
+}
+
+p {
+  color: #d4d4d8;
 }
 
 /* Game cards */
@@ -609,10 +613,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+  color: #ffffff !important;
 }
 
 .feature-card p {
-  color: var(--text-secondary);
+  color: #d4d4d8 !important;
   font-size: 0.95rem;
 }
 
