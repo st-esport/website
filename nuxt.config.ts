@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ["nitro-cloudflare-dev", "@fedorae/nuxt-uikit", '@nuxt/eslint'],
+  modules: ["nitro-cloudflare-dev", '@nuxt/eslint'],
 
   css: ['~/assets/scss/theme.scss'],
 
@@ -23,6 +23,8 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' },
       ],
       script: [
+        { src: 'https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit.min.js', defer: true },
+        { src: 'https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit-icons.min.js', defer: true },
         {
           type: 'application/ld+json',
           innerHTML: JSON.stringify({
