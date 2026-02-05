@@ -5,11 +5,11 @@
   --bg-dark: #0a0a0a;
   --bg-darker: #050505;
   --bg-card: #1a1a1a;
-  --bg-card-hover: #252525;
+  --bg-card-hover: #2a2a2a;
   --text-primary: #ffffff;
-  --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
-  --border-color: #2a2a2a;
+  --text-secondary: #d4d4d8;
+  --text-muted: #a1a1aa;
+  --border-color: #333333;
   --gradient-start: #f59e0b;
   --gradient-end: #eab308;
 }
@@ -51,6 +51,26 @@ body::-webkit-scrollbar-thumb:hover {
   max-width: 1200px;
 }
 
+/* Force dark backgrounds on all UIKit components */
+.uk-card,
+.uk-card-default,
+.uk-card-body,
+.uk-nav,
+.uk-navbar,
+.uk-offcanvas-bar {
+  background: var(--bg-card) !important;
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+}
+
+.uk-subnav > * > a {
+  color: var(--text-secondary) !important;
+}
+
+.uk-subnav > * > a:hover {
+  color: var(--text-primary) !important;
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -67,7 +87,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(15, 15, 26, 0.95);
+  background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
   padding: 0.75rem 0;
@@ -139,24 +159,32 @@ a:hover {
   transform: translateY(-1px);
 }
 
-/* Dropdown override */
-.uk-dropdown {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 0.75rem;
-  padding: 0.5rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+/* Dropdown override - force dark theme on UIKit dropdowns */
+.uk-dropdown,
+div.uk-dropdown,
+.uk-drop.uk-dropdown {
+  background: #1a1a1a !important;
+  background-color: #1a1a1a !important;
+  border: 1px solid #333333 !important;
+  border-radius: 0.75rem !important;
+  padding: 0.5rem !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6) !important;
 }
 
-.uk-dropdown-nav > li > a {
-  color: var(--text-secondary) !important;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+.uk-dropdown-nav > li > a,
+.uk-nav.uk-dropdown-nav > li > a {
+  color: #d4d4d8 !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem !important;
 }
 
-.uk-dropdown-nav > li > a:hover {
-  color: var(--text-primary) !important;
-  background: var(--bg-card-hover);
+.uk-dropdown-nav > li > a:hover,
+.uk-dropdown-nav > li > a:focus,
+.uk-nav.uk-dropdown-nav > li > a:hover,
+.uk-nav.uk-dropdown-nav > li > a:focus {
+  color: #ffffff !important;
+  background: #2a2a2a !important;
+  background-color: #2a2a2a !important;
 }
 
 /* Hero section */
@@ -187,9 +215,9 @@ a:hover {
   height: 100%;
   background: linear-gradient(
     180deg,
-    rgba(15, 15, 26, 0.4) 0%,
-    rgba(15, 15, 26, 0.8) 60%,
-    rgba(15, 15, 26, 1) 100%
+    rgba(10, 10, 10, 0.4) 0%,
+    rgba(10, 10, 10, 0.8) 60%,
+    rgba(10, 10, 10, 1) 100%
   );
 }
 
