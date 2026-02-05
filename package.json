@@ -13,17 +13,22 @@
 	},
 	"dependencies": {
 		"@fedorae/nuxt-uikit": "^3.1.14",
-		"nuxt": "^4.1.2",
-		"vue": "^3.5.22",
-		"vue-router": "^4.5.1"
+		"nuxt": "^4.3.0",
+		"vue": "^3.5.27",
+		"vue-router": "^4.6.4"
 	},
 	"devDependencies": {
-		"@nuxt/eslint": "^1.9.0",
+		"@nuxt/eslint": "^1.13.0",
 		"@types/uikit": "^3.23.0",
-		"eslint": "^9.36.0",
+		"eslint": "^9.39.2",
 		"nitro-cloudflare-dev": "^0.2.2",
-		"nitropack": "^2.12.6",
-		"typescript": "^5.9.2",
-		"wrangler": "^4.40.2"
+		"nitropack": "^2.13.1",
+		"typescript": "^5.9.3",
+		"wrangler": "^4.62.0"
+	},
+	"overrides": {
+		"@bomb.sh/tab": {
+			"commander": "^11.1.0"
+		}
 	}
 }
