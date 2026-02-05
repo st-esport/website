@@ -7,9 +7,9 @@ defineProps({
 
 <template>
   <div>
-    <section class="page-hero" v-if="photo">
+    <section v-if="photo" class="page-hero">
       <img :src="photo" :alt="title" class="hero-bg">
-      <div class="hero-overlay"></div>
+      <div class="hero-overlay" />
       <div class="page-hero-content">
         <h1 v-if="title">{{ title }}</h1>
       </div>

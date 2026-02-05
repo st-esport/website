@@ -6,7 +6,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <img src="/home_banner.jpg" alt="Støvring eSport" class="hero-bg">
-      <div class="hero-overlay"></div>
+      <div class="hero-overlay" />
       <div class="hero-content">
         <h1>Velkommen til Støvring eSport</h1>
         <p>Vi fremmer børns sociale færdigheder og IT-kundskaber gennem gaming i et trygt og struktureret miljø.</p>

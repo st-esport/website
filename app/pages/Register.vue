@@ -5,7 +5,7 @@
   <div>
     <section class="page-hero">
       <img src="/holdsport_banner.png" alt="Tilmeld" class="hero-bg">
-      <div class="hero-overlay"></div>
+      <div class="hero-overlay" />
       <div class="page-hero-content">
         <h1>Tilmeld dig</h1>
       </div>
