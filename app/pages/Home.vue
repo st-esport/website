@@ -64,7 +64,7 @@
             <div class="game-card-content">
               <h3 class="game-card-title">Counter-Strike</h3>
               <p class="game-card-desc">Det klassiske taktiske shooter der kræver teamwork og præcision.</p>
-              <div class="game-card-schedule">📅 Se siden for tider</div>
+              <div class="game-card-schedule">📅 Onsdag 17:30-19:30</div>
             </div>
           </NuxtLink>
 
@@ -73,7 +73,7 @@
             <div class="game-card-content">
               <h3 class="game-card-title">Minecraft</h3>
               <p class="game-card-desc">Det kreative sandkassespil hvor fantasien sætter grænserne.</p>
-              <div class="game-card-schedule">📅 Se siden for tider</div>
+              <div class="game-card-schedule">📅 Torsdag 17:30-19:30</div>
             </div>
           </NuxtLink>
         </div>
