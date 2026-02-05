@@ -303,13 +303,18 @@ div.uk-dropdown,
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .section-subtitle {
-  color: var(--text-secondary);
+  color: #d4d4d8;
   text-align: center;
   max-width: 600px;
   margin: 0 auto 3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
 }
 
 /* Game cards */
