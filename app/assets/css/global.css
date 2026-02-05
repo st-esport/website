@@ -1,17 +1,17 @@
 :root {
-  --primary-color: #6366f1;
-  --primary-hover: #818cf8;
-  --secondary-color: #10b981;
-  --bg-dark: #0f0f1a;
-  --bg-darker: #080810;
-  --bg-card: #1a1a2e;
-  --bg-card-hover: #252540;
+  --primary-color: #f59e0b;
+  --primary-hover: #fbbf24;
+  --secondary-color: #eab308;
+  --bg-dark: #0a0a0a;
+  --bg-darker: #050505;
+  --bg-card: #1a1a1a;
+  --bg-card-hover: #252525;
   --text-primary: #ffffff;
   --text-secondary: #a1a1aa;
   --text-muted: #71717a;
-  --border-color: #27273a;
-  --gradient-start: #6366f1;
-  --gradient-end: #a855f7;
+  --border-color: #2a2a2a;
+  --gradient-start: #f59e0b;
+  --gradient-end: #eab308;
 }
 
 * {
@@ -249,7 +249,7 @@ a:hover {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
   color: white;
 }
 
