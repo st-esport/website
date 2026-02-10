@@ -1,0 +1,12 @@
+name: quality assurance
+on:
+  push:
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6.0.2
+      - name: Install modules
+        run: npm install --no-audit --no-fund
+      - name: Run ESLint
+        run: npx eslint . --no-fix --max-warnings=0
