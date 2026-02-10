@@ -35,4 +35,26 @@ import {RouterLink, RouterView} from 'vue-router'
   </header>
 
   <RouterView/>
+
+  <footer class="uk-section uk-section-secondary uk-section-small uk-margin-large-top">
+    <div class="uk-container">
+      <div class="uk-grid-small uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+        <div>
+          <h3 class="uk-text-bold">Støvring eSport</h3>
+          <p>Grangårdscentret 27<br>9530 Støvring</p>
+        </div>
+        <div>
+          <h3 class="uk-text-bold">Kontakt</h3>
+          <p>
+            Tlf: <a href="tel:+4530201071">30 20 10 71</a><br>
+            Email: <a href="mailto:adm@stoevring-esport.dk">adm@stoevring-esport.dk</a>
+          </p>
+        </div>
+        <div>
+          <h3 class="uk-text-bold">CVR</h3>
+          <p>40804838</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
