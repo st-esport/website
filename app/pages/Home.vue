@@ -92,16 +92,7 @@
       </div>
     </section>
 
-    <!-- Activities Section -->
-    <section class="section">
-        <div class="uk-container">
-            <h2 class="section-title">Kommende Aktiviteter</h2>
-            <ActivityCalendar :limit="5" />
-            <div style="text-align: center; margin-top: 2rem;">
-                <NuxtLink to="/kalender" class="btn btn-secondary">Se alle aktiviteter</NuxtLink>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Facebook Feed Section -->
     <section class="section" style="background: var(--bg-darker);">
@@ -112,4 +103,15 @@
       </div>
     </section>
   </div>
+
+    <!-- Activities Section -->
+    <section class="section">
+        <div class="uk-container">
+            <h2 class="section-title">Kommende Aktiviteter</h2>
+            <ActivityCalendar :limit="5" />
+            <div style="text-align: center; margin-top: 2rem;">
+                <NuxtLink to="/kalender" class="btn btn-secondary">Se alle aktiviteter</NuxtLink>
+            </div>
+        </div>
+    </section>
 </template>
