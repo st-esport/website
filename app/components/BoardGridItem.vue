@@ -9,13 +9,15 @@ defineProps({
 </script>
 
 <template>
-  <div>
-    <img class="uk-border-rounded uk-width-medium" :src="photo" :alt="name"><br>
-    <div class="uk-text-left">
-      {{ title }}<br>
-      <b>{{ name }}</b><br>
-      <a :href="'mailto:' + email">{{ email }}</a><br>
-      <a :href="'tel:' + phone">{{ phone }}</a><br>
+  <div class="board-card">
+    <img class="board-card-image" :src="photo" :alt="name">
+    <div class="board-card-content">
+      <div class="board-card-role">{{ title }}</div>
+      <div class="board-card-name">{{ name }}</div>
+      <div class="board-card-contact">
+        <a v-if="email" :href="'mailto:' + email">✉️ {{ email }}</a>
+        <a v-if="phone" :href="'tel:' + phone">📞 {{ phone }}</a>
+      </div>
     </div>
   </div>
 </template>

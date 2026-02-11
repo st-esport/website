@@ -6,11 +6,21 @@ defineProps({
 </script>
 
 <template>
-  <div class="uk-container uk-padding-remove">
-    <img v-show="photo !== null" class="uk-width-max-content uk-align-center uk-margin-small-bottom" :src="photo" alt="{{title}} banner">
-    <h1 v-show="title !== null" class="uk-margin-remove uk-padding-small uk-text-center uk-text-left@xl uk-text-left@l">{{ title }}</h1>
-    <div class="uk-padding-small"><slot/></div>
+  <div>
+    <section v-if="photo" class="page-hero">
+      <img :src="photo" :alt="title" class="hero-bg">
+      <div class="hero-overlay" />
+      <div class="page-hero-content">
+        <h1 v-if="title">{{ title }}</h1>
+      </div>
+    </section>
+    <section v-else class="page-hero" style="min-height: 200px; background: var(--bg-darker);">
+      <div class="page-hero-content">
+        <h1 v-if="title">{{ title }}</h1>
+      </div>
+    </section>
+    <div class="content-section">
+      <slot/>
+    </div>
   </div>
 </template>
-
-

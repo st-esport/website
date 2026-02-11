@@ -1,0 +1,738 @@
+// Wasp theme for Støvring eSport
+// Override UIKit variables before importing
+
+// ==========================================================================
+// Global Colors - Wasp Theme (Yellow/Gold on Black)
+// ==========================================================================
+
+$global-color: #d4d4d8;                      // Main text color (light gray)
+$global-emphasis-color: #ffffff;              // Headings, strong text (white)
+$global-muted-color: #a1a1aa;                 // Muted/secondary text
+$global-inverse-color: #ffffff;               // Inverse (for dark backgrounds)
+
+$global-link-color: #f59e0b;                  // Links (wasp yellow/amber)
+$global-link-hover-color: #fbbf24;            // Link hover (brighter yellow)
+
+// ==========================================================================
+// Backgrounds
+// ==========================================================================
+
+$global-background: #0a0a0a;                  // Main background (near black)
+$global-muted-background: #1a1a1a;            // Muted background (dark gray)
+$global-primary-background: #f59e0b;          // Primary (wasp yellow)
+$global-secondary-background: #050505;        // Secondary background (darker)
+$global-success-background: #22c55e;
+$global-warning-background: #f59e0b;
+$global-danger-background: #ef4444;
+
+// ==========================================================================
+// Borders
+// ==========================================================================
+
+$global-border: #333333;                      // Border color
+$global-border-width: 1px;
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+$global-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$base-body-background: $global-background;
+$base-body-color: $global-color;
+$base-heading-color: $global-emphasis-color;
+$base-link-color: $global-link-color;
+$base-link-hover-color: $global-link-hover-color;
+
+// ==========================================================================
+// Navbar
+// ==========================================================================
+
+$navbar-background: rgba(10, 10, 10, 0.95);
+$navbar-nav-item-color: $global-muted-color;
+$navbar-nav-item-hover-color: $global-emphasis-color;
+$navbar-nav-item-active-color: $global-emphasis-color;
+
+// ==========================================================================
+// Dropdown
+// ==========================================================================
+
+$dropdown-background: #1a1a1a;
+$dropdown-color: $global-color;
+$dropdown-nav-item-color: $global-muted-color;
+$dropdown-nav-item-hover-color: $global-emphasis-color;
+
+// ==========================================================================
+// Card
+// ==========================================================================
+
+$card-default-background: #1a1a1a;
+$card-default-color: $global-color;
+$card-default-title-color: $global-emphasis-color;
+$card-primary-background: $global-primary-background;
+$card-secondary-background: $global-secondary-background;
+
+// ==========================================================================
+// Button
+// ==========================================================================
+
+$button-default-background: transparent;
+$button-default-color: $global-emphasis-color;
+$button-default-border: $global-border;
+$button-default-hover-background: #1a1a1a;
+$button-default-hover-color: $global-emphasis-color;
+
+$button-primary-background: $global-primary-background;
+$button-primary-color: #000000;
+$button-primary-hover-background: #fbbf24;
+$button-primary-hover-color: #000000;
+
+// ==========================================================================
+// Form
+// ==========================================================================
+
+$form-background: #1a1a1a;
+$form-color: $global-color;
+$form-border: $global-border;
+$form-focus-background: #1a1a1a;
+$form-focus-color: $global-emphasis-color;
+$form-focus-border: $global-primary-background;
+
+// ==========================================================================
+// Inverse (for components on dark backgrounds)
+// ==========================================================================
+
+$inverse-global-color: $global-color;
+$inverse-global-emphasis-color: $global-emphasis-color;
+$inverse-global-muted-color: $global-muted-color;
+$inverse-global-border: #333333;
+
+// ==========================================================================
+// Import UIKit
+// ==========================================================================
+
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+@import "uikit/src/scss/uikit-theme.scss";
+
+// ==========================================================================
+// Additional Custom Styles
+// ==========================================================================
+
+// Custom scrollbar
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: $global-secondary-background;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $global-primary-background;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: $global-link-hover-color;
+}
+
+// Hero section
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.4) 0%,
+    rgba(10, 10, 10, 0.8) 60%,
+    rgba(10, 10, 10, 1) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: $global-emphasis-color;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: $global-color;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// Page hero (smaller)
+.page-hero {
+  position: relative;
+  height: 40vh;
+  min-height: 300px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  color: $global-emphasis-color;
+}
+
+// Custom buttons
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, $global-primary-background, #eab308);
+  color: #000000;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+  color: #000000;
+}
+
+.btn-secondary {
+  background: $global-muted-background;
+  color: $global-emphasis-color;
+  border: 1px solid $global-border;
+}
+
+.btn-secondary:hover {
+  background: #2a2a2a;
+  border-color: $global-primary-background;
+  color: $global-emphasis-color;
+}
+
+// Section styling
+.section {
+  padding: 5rem 1.5rem;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: $global-emphasis-color;
+}
+
+.section-subtitle {
+  color: $global-color;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+// Game cards
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.game-card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: $global-muted-background;
+  border: 1px solid $global-border;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: block;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  border-color: $global-primary-background;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.game-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.game-card-content {
+  padding: 1.5rem;
+}
+
+.game-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $global-emphasis-color;
+  margin-bottom: 0.5rem;
+}
+
+.game-card-desc {
+  color: $global-color;
+  font-size: 0.95rem;
+}
+
+.game-card-schedule {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: $global-secondary-background;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: $global-primary-background;
+}
+
+// Content section
+.content-section {
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-section p {
+  margin-bottom: 1.25rem;
+  color: $global-color;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.content-section a {
+  color: $global-link-color;
+  font-weight: 500;
+}
+
+// Board member cards
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.board-card {
+  background: $global-muted-background;
+  border: 1px solid $global-border;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.board-card:hover {
+  transform: translateY(-5px);
+  border-color: $global-primary-background;
+}
+
+.board-card-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.board-card-content {
+  padding: 1.5rem;
+}
+
+.board-card-role {
+  font-size: 0.875rem;
+  color: $global-primary-background;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.board-card-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $global-emphasis-color;
+  margin-bottom: 1rem;
+}
+
+.board-card-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.board-card-contact a {
+  color: $global-muted-color;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.board-card-contact a:hover {
+  color: $global-primary-background;
+}
+
+// Features grid
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+  background: $global-muted-background;
+  border-radius: 1rem;
+  border: 1px solid $global-border;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, $global-primary-background, #eab308);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.5rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: $global-emphasis-color;
+}
+
+.feature-card p {
+  color: $global-color;
+  font-size: 0.95rem;
+}
+
+// Info box
+.info-box {
+  background: $global-muted-background;
+  border: 1px solid $global-border;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.info-box-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: $global-primary-background;
+}
+
+// Footer
+.site-footer {
+  background: $global-secondary-background;
+  border-top: 1px solid $global-border;
+  padding: 4rem 1.5rem 2rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-brand img {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  color: $global-muted-color;
+  font-size: 0.9rem;
+}
+
+.footer-section h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $global-emphasis-color;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+  color: $global-muted-color;
+}
+
+.footer-section ul li a {
+  color: $global-muted-color;
+  font-size: 0.9rem;
+}
+
+.footer-section ul li a:hover {
+  color: $global-primary-background;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid $global-border;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom p {
+  color: $global-muted-color;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: $global-muted-color;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: $global-primary-background;
+}
+
+// Navigation
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $global-border;
+  padding: 0.75rem 0;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-logo img {
+  height: 3rem;
+  width: auto;
+}
+
+.site-logo span {
+  font-weight: 700;
+  font-size: 1.25rem;
+  background: linear-gradient(135deg, $global-primary-background, #eab308);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a,
+.nav-links li > span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  color: $global-muted-color;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-links li a:hover,
+.nav-links li > span:hover {
+  color: $global-emphasis-color;
+  background: $global-muted-background;
+}
+
+.nav-cta {
+  background: linear-gradient(135deg, $global-primary-background, #eab308) !important;
+  color: #000000 !important;
+}
+
+.nav-cta:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+// Mobile nav toggle
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: $global-emphasis-color;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: $global-background;
+    border-bottom: 1px solid $global-border;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a,
+  .nav-links li > span {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+// Statutes page styling
+.statutes-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.statutes-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid $global-border;
+  color: $global-emphasis-color;
+}
+
+.statutes-content p {
+  margin-bottom: 1rem;
+  color: $global-color;
+  line-height: 1.8;
+}
+
+.statutes-content ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.statutes-content li {
+  margin-bottom: 0.5rem;
+  color: $global-color;
+}
