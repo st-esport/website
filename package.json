@@ -13,6 +13,7 @@
 	},
 	"dependencies": {
 		"@fedorae/nuxt-uikit": "^3.1.14",
+		"fast-xml-parser": "^5.3.5",
 		"nuxt": "^4.3.0",
 		"vue": "^3.5.27",
 		"vue-router": "^4.6.4"
