@@ -18,10 +18,10 @@ const props = defineProps<{
 
 const { data: activities, status } = useFetch<Activity[]>('/api/activities')
 
-const gameIcons: Record<string, string> = {
-  'Fortnite': '🎯',
-  'Minecraft': '⛏️',
-  'Counter-Strike': '🔫',
+const gameLogos: Record<string, string> = {
+  'Fortnite': '/icons/fortnite.png',
+  'Minecraft': '/icons/minecraft.png',
+  'Counter-Strike': '/icons/cs2.png',
 }
 
 function formatTime(dateStr: string): string {
@@ -84,7 +84,8 @@ const grouped = computed<GroupedActivities[]>(() => {
             target="_blank"
             class="activity-item"
           >
-            <span class="activity-icon">{{ gameIcons[activity.title] || '📅' }}</span>
+            <img v-if="gameLogos[activity.title]" :src="gameLogos[activity.title]" :alt="activity.title" class="activity-icon">
+            <span v-else class="activity-icon-fallback">📅</span>
             <div class="activity-info">
               <span class="activity-title">{{ activity.title }}</span>
               <span class="activity-meta">{{ activity.team }}</span>
@@ -150,6 +151,19 @@ const grouped = computed<GroupedActivities[]>(() => {
 }
 
 .activity-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.activity-icon-fallback {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
   flex-shrink: 0;
 }
@@ -199,6 +213,13 @@ const grouped = computed<GroupedActivities[]>(() => {
   }
 
   .activity-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .activity-icon-fallback {
+    width: 36px;
+    height: 36px;
     font-size: 1.25rem;
   }
 

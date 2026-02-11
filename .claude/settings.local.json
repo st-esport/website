@@ -8,7 +8,11 @@
       "Bash(curl:*)",
       "Bash(python:*)",
       "WebFetch(domain:www.holdsport.dk)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(where:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "WebFetch(domain:www.minecraft.net)"
     ]
   }
 }
