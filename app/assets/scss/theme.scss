@@ -472,6 +472,18 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 0.95rem;
 }
 
+// Facebook feed
+.facebook-feed {
+  max-width: 500px;
+  margin: 0 auto;
+
+  iframe {
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+  }
+}
+
 // Info box
 .info-box {
   background: $global-muted-background;

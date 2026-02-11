@@ -60,7 +60,7 @@
           </NuxtLink>
 
           <NuxtLink to="/counterstrike" class="game-card">
-            <img src="/csgo_banner.jpg" alt="Counter-Strike" class="game-card-image">
+            <img src="/cs2_banner.jpg" alt="Counter-Strike" class="game-card-image">
             <div class="game-card-content">
               <h3 class="game-card-title">Counter-Strike</h3>
               <p class="game-card-desc">Det klassiske taktiske shooter der kræver teamwork og præcision.</p>
@@ -89,6 +89,15 @@
           <NuxtLink to="/tilmeld" class="btn btn-primary">Tilmeld dig i dag</NuxtLink>
           <a href="https://www.facebook.com/stoevringesport" target="_blank" class="btn btn-secondary">Følg os på Facebook</a>
         </div>
+      </div>
+    </section>
+
+    <!-- Facebook Feed Section -->
+    <section class="section" style="background: var(--bg-darker);">
+      <div class="uk-container">
+        <h2 class="section-title">Seneste Nyt</h2>
+        <p class="section-subtitle">Følg med i hvad der sker hos Støvring eSport.</p>
+        <FacebookFeed />
       </div>
     </section>
   </div>
