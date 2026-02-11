@@ -60,7 +60,7 @@
           </NuxtLink>
 
           <NuxtLink to="/counterstrike" class="game-card">
-            <img src="/csgo_banner.jpg" alt="Counter-Strike" class="game-card-image">
+            <img src="/cs2_banner.jpg" alt="Counter-Strike" class="game-card-image">
             <div class="game-card-content">
               <h3 class="game-card-title">Counter-Strike</h3>
               <p class="game-card-desc">Det klassiske taktiske shooter der kræver teamwork og præcision.</p>
