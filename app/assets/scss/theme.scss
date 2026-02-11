@@ -227,6 +227,24 @@ body::-webkit-scrollbar-thumb:hover {
   color: $global-emphasis-color;
 }
 
+// Page header (no photo)
+.page-header {
+  background: var(--bg-darker);
+  padding: 3rem 1.5rem 2rem;
+}
+
+.page-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  color: $global-emphasis-color;
+}
+
 // Custom buttons
 .btn {
   display: inline-flex;

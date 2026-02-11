@@ -3,8 +3,8 @@
 
 <template>
   <div>
-    <section class="page-hero" style="min-height: 200px; background: var(--bg-darker);">
-      <div class="page-hero-content">
+    <section class="page-header">
+      <div class="page-header-content">
         <h1>Vedtægter</h1>
       </div>
     </section>
