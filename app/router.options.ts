@@ -7,6 +7,7 @@ import CounterStrike from "~/pages/CounterStrike.vue";
 import Fortnite from "~/pages/Fortnite.vue";
 import Register from "~/pages/Register.vue";
 import Home from "~/pages/Home.vue";
+import Calendar from "~/pages/Calendar.vue";
 
 export default {
     routes: _routes => {
@@ -35,6 +36,11 @@ export default {
                 path: '/minecraft',
                 name: 'minecraft',
                 component: Minecraft,
+            },
+            {
+                path: '/kalender',
+                name: 'kalender',
+                component: Calendar,
             },
             {
                 path: '/bestyrelsen',

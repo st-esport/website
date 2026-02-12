@@ -43,6 +43,7 @@ const toggleMobileMenu = () => {
                 </ul>
               </div>
             </li>
+            <li><NuxtLink to="/kalender" @click="mobileMenuOpen = false">Kalender</NuxtLink></li>
             <li><NuxtLink to="/tilmeld" class="nav-cta" @click="mobileMenuOpen = false">Tilmeld</NuxtLink></li>
           </ul>
         </nav>

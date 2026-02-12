@@ -14,8 +14,8 @@ defineProps({
         <h1 v-if="title">{{ title }}</h1>
       </div>
     </section>
-    <section v-else class="page-hero" style="min-height: 200px; background: var(--bg-darker);">
-      <div class="page-hero-content">
+    <section v-else class="page-header">
+      <div class="page-header-content">
         <h1 v-if="title">{{ title }}</h1>
       </div>
     </section>
